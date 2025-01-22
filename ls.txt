@@ -1,0 +1,11 @@
+total 8
+drwxr-xr-x@   7 jamescourson  staff   224B Jan 21 20:20 .
+drwxr-x---  139 jamescourson  staff   4.3K Jan 21 20:21 ..
+drwxr-xr-x@  15 jamescourson  staff   480B Jan 21 20:16 .git
+drwxr-xr-x@   3 jamescourson  staff    96B Jan 16 17:44 .github
+-rw-r--r--@   1 jamescourson  staff   595B Jan 16 17:44 build.yaml
+drwxr-xr-x@   5 jamescourson  staff   160B Jan 16 17:44 config
+-rw-r--r--@   1 jamescourson  staff     0B Jan 21 20:21 ls.txt
+build.yaml
+config
+ls.txt
