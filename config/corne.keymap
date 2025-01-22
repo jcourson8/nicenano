@@ -9,6 +9,30 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_bspc {
+                        timeout-ms = <50>;
+                        key-positions = <21 22>;
+                        bindings = <&kp BSPC>;
+                };
+                combo_word {
+                        timeout-ms = <50>;
+                        key-positions = <20 21 22>;     // J K L
+                        bindings = <&kp LC(BSPC)>;      // Ctrl + Backspace = delete word
+                };
+                combo_line {
+                        timeout-ms = <50>;
+                        key-positions = <20 21 22 23>;  // J K L ;
+                        bindings = <&kp LG(BSPC)>;      // Cmd/Win + Backspace = delete line
+                };
+                combo_shift_enter {
+                        timeout-ms = <50>;
+                        key-positions = <22 23>;        // L ;
+                        bindings = <&kp LS(RET)>;       // Shift + Enter
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
