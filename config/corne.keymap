@@ -12,22 +12,25 @@
         combos {
                 compatible = "zmk,combos";
                 combo_bspc {
-                        timeout-ms = <50>;
+                        timeout-ms = <100>;
                         key-positions = <21 22>;
                         bindings = <&kp BSPC>;
+                        quick-tap-ms = <150>;
                 };
                 combo_word {
-                        timeout-ms = <50>;
+                        timeout-ms = <100>;
                         key-positions = <20 21 22>;     // J K L
                         bindings = <&kp LC(BSPC)>;      // Ctrl + Backspace = delete word
+                        quick-tap-ms = <150>;
                 };
                 combo_line {
-                        timeout-ms = <50>;
+                        timeout-ms = <100>;
                         key-positions = <20 21 22 23>;  // J K L ;
                         bindings = <&kp LG(BSPC)>;      // Cmd/Win + Backspace = delete line
+                        quick-tap-ms = <150>;
                 };
                 combo_shift_enter {
-                        timeout-ms = <50>;
+                        timeout-ms = <100>;
                         key-positions = <22 23>;        // L ;
                         bindings = <&kp LS(RET)>;       // Shift + Enter
                 };
