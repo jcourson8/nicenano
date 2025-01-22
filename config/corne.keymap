@@ -12,23 +12,22 @@
         combos {
                 compatible = "zmk,combos";
                 combo_bspc {
-                        timeout-ms = <200>;
-                        key-positions = <21 22>;
-                        bindings = <&kp BSPC>;
+                        key-positions = <20 21>; // K L
+                        bindings = <&kp DEL>;
                 };
                 combo_word {
-                        timeout-ms = <200>;
-                        key-positions = <20 21 22>;     // J K L
-                        bindings = <&kp LC(BSPC)>;      // Ctrl + Backspace = delete word
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21>;     // JKL
+                        bindings = <&kp LC(DEL)>;      // Ctrl + Backspace = delete word
                 };
                 combo_line {
-                        timeout-ms = <200>;
-                        key-positions = <20 21 22 23>;  // J K L ;
-                        bindings = <&kp LG(BSPC)>;      // Cmd/Win + Backspace = delete line
+                        timeout-ms = <50>;
+                        key-positions = <19 20 21 22>;  // JKL;
+                        bindings = <&kp LG(DEL)>;      // Cmd/Win + Backspace = delete line
                 };
                 combo_shift_enter {
-                        timeout-ms = <200>;
-                        key-positions = <22 23>;        // L ;
+                        timeout-ms = <50>;
+                        key-positions = <21 22>;        // L ;
                         bindings = <&kp LS(RET)>;       // Shift + Enter
                 };
         };
@@ -36,11 +35,17 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
+
+/ -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// |  0   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  10 |  11 |
+// | 12   |  13 | 14  | 15  | 16  | 17  |   | 18  | 19   | 20  | 21  | 22  | 23  |
+// | 24   |  25 | 26  | 27  | 28  | 29  |   | 30  | 31   | 32  | 33  | 34  | 35  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         display-name = "Base";
                         bindings = <
