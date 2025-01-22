@@ -18,7 +18,7 @@
                 combo_word {
                         timeout-ms = <50>;
                         key-positions = <19 20 21>;     // JKL
-                        bindings = <&kp LC(BACKSPACE)>;      // Ctrl + Backspace = delete word
+                        bindings = <&kp LEFT_ALT(BACKSPACE)>;      // Ctrl + Backspace = delete word
                 };
                 combo_line {
                         timeout-ms = <50>;
