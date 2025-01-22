@@ -13,17 +13,17 @@
                 compatible = "zmk,combos";
                 combo_bspc {
                         key-positions = <20 21>; // K L
-                        bindings = <&kp DEL>;
+                        bindings = <&kp BACKSPACE>;
                 };
                 combo_word {
                         timeout-ms = <50>;
                         key-positions = <19 20 21>;     // JKL
-                        bindings = <&kp LC(DEL)>;      // Ctrl + Backspace = delete word
+                        bindings = <&kp LC(BACKSPACE)>;      // Ctrl + Backspace = delete word
                 };
                 combo_line {
                         timeout-ms = <50>;
                         key-positions = <19 20 21 22>;  // JKL;
-                        bindings = <&kp LG(DEL)>;      // Cmd/Win + Backspace = delete line
+                        bindings = <&kp LG(BACKSPACE)>;      // Cmd/Win + Backspace = delete line
                 };
                 combo_shift_enter {
                         timeout-ms = <50>;
